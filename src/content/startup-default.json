@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "CloudFlow - 팀 협업의 새로운 기준",
+    "description": "CloudFlow는 팀의 업무 흐름을 자동화하는 올인원 프로젝트 관리 플랫폼입니다."
+  },
+  "header": {
+    "logo": "CloudFlow",
+    "nav": [
+      { "label": "기능", "href": "#features" },
+      { "label": "소개", "href": "#about" },
+      { "label": "솔루션", "href": "#services" },
+      { "label": "고객 사례", "href": "#testimonials" },
+      { "label": "시작하기", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "headline": "팀의 업무 흐름을 자동화하세요",
+    "subheadline": "반복 작업은 CloudFlow에 맡기고, 팀은 진짜 중요한 일에 집중하세요. 프로젝트 관리부터 자동화까지, 하나의 플랫폼으로 해결합니다.",
+    "primaryCta": { "label": "무료로 시작하기", "href": "#contact" },
+    "secondaryCta": { "label": "데모 보기", "href": "#demo" }
+  },
+  "features": {
+    "sectionTitle": "스마트한 업무 관리",
+    "sectionSubtitle": "복잡한 프로젝트도 간단하게, 자동으로",
+    "items": [
+      {
+        "icon": "zap",
+        "title": "워크플로우 자동화",
+        "description": "반복되는 업무를 자동화 규칙으로 설정하면 알아서 처리됩니다.",
+        "image": "/images/defaults/feature-placeholder.svg"
+      },
+      {
+        "icon": "users",
+        "title": "실시간 협업",
+        "description": "팀원 간 실시간 소통과 파일 공유로 어디서든 함께 일할 수 있습니다.",
+        "image": "/images/defaults/feature-placeholder.svg"
+      },
+      {
+        "icon": "chart",
+        "title": "진행 상황 분석",
+        "description": "프로젝트 현황을 한눈에 파악하고 데이터 기반으로 의사결정하세요.",
+        "image": "/images/defaults/feature-placeholder.svg"
+      },
+      {
+        "icon": "globe",
+        "title": "어디서든 접속",
+        "description": "웹, 데스크톱, 모바일 — 어떤 기기에서든 끊김 없이 사용 가능합니다.",
+        "image": "/images/defaults/feature-placeholder.svg"
+      },
+      {
+        "icon": "shield",
+        "title": "엔터프라이즈 보안",
+        "description": "SOC2, ISO 27001 인증으로 기업 데이터를 안전하게 보호합니다.",
+        "image": "/images/defaults/feature-placeholder.svg"
+      },
+      {
+        "icon": "link",
+        "title": "300+ 통합",
+        "description": "Slack, GitHub, Figma 등 이미 쓰고 있는 도구와 자연스럽게 연동됩니다.",
+        "image": "/images/defaults/feature-placeholder.svg"
+      }
+    ]
+  },
+  "about": {
+    "sectionTitle": "CloudFlow를 만든 이유",
+    "description": "프로젝트 관리 도구는 많지만, 정작 팀의 업무 흐름에 맞추어지는 도구는 없었습니다.\n\nCloudFlow는 2022년, 직접 스타트업을 운영하며 느낀 불편함에서 시작되었습니다. 도구에 맞추는 게 아니라, 팀의 방식에 맞추어지는 플랫폼을 만들고 있습니다.",
+    "stats": [
+      { "label": "활성 사용자", "value": "50K+" },
+      { "label": "팀 도입", "value": "3,000+" },
+      { "label": "자동화된 작업", "value": "100만+" },
+      { "label": "고객 만족도", "value": "4.9/5" }
+    ]
+  },
+  "services": {
+    "sectionTitle": "솔루션",
+    "sectionSubtitle": "팀 규모와 목적에 맞는 솔루션",
+    "items": [
+      {
+        "title": "프로젝트 관리",
+        "description": "칸반, 간트차트, 타임라인 뷰로 프로젝트를 체계적으로 관리합니다."
+      },
+      {
+        "title": "워크플로우 빌더",
+        "description": "코드 없이 드래그 앤 드롭으로 업무 자동화 규칙을 만들 수 있습니다."
+      },
+      {
+        "title": "리소스 관리",
+        "description": "팀원의 업무량과 일정을 시각화하여 리소스를 최적으로 배분합니다."
+      },
+      {
+        "title": "대시보드 & 리포트",
+        "description": "실시간 데이터로 프로젝트 건강 상태를 모니터링하고 보고서를 자동 생성합니다."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "팀들이 선택한 이유",
+    "items": [
+      {
+        "name": "정유진",
+        "role": "CPO",
+        "company": "릴리스테크",
+        "quote": "CloudFlow 도입 후 스프린트 완료율이 35% 올랐습니다. 자동화가 정말 큰 차이를 만들어요."
+      },
+      {
+        "name": "한민수",
+        "role": "개발팀 리드",
+        "company": "데브스퀘어",
+        "quote": "GitHub, Slack 연동이 완벽해서 따로 컨텍스트 스위칭할 필요가 없어졌어요."
+      },
+      {
+        "name": "오서영",
+        "role": "대표",
+        "company": "크리에이트허브",
+        "quote": "디자인 팀부터 마케팅 팀까지 모두 CloudFlow로 통합했습니다. 소통 비용이 확 줄었어요."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "지금 바로 시작하세요",
+    "description": "14일 무료 체험, 신용카드 불필요. 5분 안에 팀 전체가 사용할 수 있습니다.",
+    "buttonLabel": "무료 체험 시작",
+    "buttonHref": "#contact"
+  },
+  "footer": {
+    "companyName": "CloudFlow",
+    "description": "팀의 업무 흐름을 자동화하는 올인원 플랫폼",
+    "links": [
+      {
+        "title": "제품",
+        "items": [
+          { "label": "기능", "href": "#features" },
+          { "label": "요금제", "href": "#" },
+          { "label": "연동", "href": "#" },
+          { "label": "업데이트", "href": "#" }
+        ]
+      },
+      {
+        "title": "회사",
+        "items": [
+          { "label": "소개", "href": "#about" },
+          { "label": "채용", "href": "#" },
+          { "label": "블로그", "href": "#" },
+          { "label": "문의", "href": "#" }
+        ]
+      },
+      {
+        "title": "지원",
+        "items": [
+          { "label": "도움말", "href": "#" },
+          { "label": "API 문서", "href": "#" },
+          { "label": "개인정보처리방침", "href": "#" },
+          { "label": "이용약관", "href": "#" }
+        ]
+      }
+    ],
+    "contact": {
+      "email": "hello@cloudflow.kr",
+      "phone": "02-9876-5432",
+      "address": "서울특별시 성수동 디지털로 45, 클라우드타워 5층"
+    },
+    "copyright": "© 2024 CloudFlow Inc. All rights reserved."
+  }
+}

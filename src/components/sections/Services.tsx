@@ -6,18 +6,18 @@ export default function Services({ sectionTitle, sectionSubtitle, items }: Servi
     <section id="services" className="py-24 sm:py-32">
       <Container>
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" data-field="services.sectionTitle">
             {sectionTitle}
           </h2>
           {sectionSubtitle && (
-            <p className="mt-4 text-lg text-gray-600">{sectionSubtitle}</p>
+            <p className="mt-4 text-lg text-gray-600" data-field="services.sectionSubtitle">{sectionSubtitle}</p>
           )}
         </div>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-2">
           {items.map((service, i) => (
             <div
-              key={service.title}
+              key={i}
               className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100 transition-all hover:shadow-lg"
             >
               <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 transition-opacity group-hover:opacity-100" />

@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "FinBridge - 금융의 새로운 기준",
+    "description": "데이터와 기술로 모든 사람의 금융 생활을 바꿉니다."
+  },
+  "header": {
+    "logo": "FinBridge",
+    "nav": [
+      { "label": "회사소개", "href": "#about" },
+      { "label": "사업영역", "href": "#services" },
+      { "label": "컬처", "href": "#features" },
+      { "label": "블로그", "href": "#" },
+      { "label": "채용", "href": "#careers" }
+    ]
+  },
+  "hero": {
+    "headline": "Empowering People\nwith Data",
+    "subheadline": "당신의 돈을 가장 강력하게",
+    "primaryCta": { "label": "채용 공고 보기", "href": "#careers" },
+    "secondaryCta": { "label": "더 알아보기", "href": "#about" }
+  },
+  "about": {
+    "sectionTitle": "좋은 데이터와 올바른 기술이 있다면 사람들은 금융으로 더 많은 부를 쌓을 수 있습니다.",
+    "description": "2017년, 최적의 신용카드나 대출을 비교하는 것은 법으로 금지되어 있었고, 고액 자산가가 아닌 일반 고객들에게 통합 자산 관리가 불가능한 환경이었습니다.\n디지털 기술과 데이터 활용에서 고객은 배제되어 있었고, 고객의 편의나 이익은 발전하지 않는 생태계에서, 사람들은 발품을 팔아 은행을 방문해야 했으며, 설계사의 조언이 정말 내게 유리한 지 의심해야 했습니다.\n우리는 기존의 접근 방식을 완전히 바꿔, 고객이 금융기관과 실시간으로 연결되고, 자신의 재무 데이터를 주도적으로 활용해 사람들이 더 큰 이익을 얻는 기술이 활성화되는 세상이 필요하다고 느꼈습니다.\n그래서 우리는 FinBridge를 창업했습니다.",
+    "stats": [
+      { "label": "누적 사용자", "value": "800만+" },
+      { "label": "연동 금융사", "value": "120+" },
+      { "label": "팀 멤버", "value": "350+" },
+      { "label": "시리즈 누적 투자", "value": "1,200억" }
+    ]
+  },
+  "services": {
+    "sectionTitle": "우리는 수백개 금융 기관과 연결된 네트워크와 3만개의 금융 상품 데이터로 당신에게 강력한 혜택을 제공합니다.",
+    "sectionSubtitle": "당신이 가장 필요할 때, 금융은 당신의 편이었나요? 당신이 쓴 카드 결제 수수료만큼 혜택은 받고 있나요? 보험은 당신의 미래를 든든히 지켜주고 있나요?",
+    "items": [
+      {
+        "title": "금융 혜택",
+        "description": "우리는 더 낮은 대출 금리, 더 많은 혜택, 더 강력한 보장으로 당신에게 가장 큰 혜택을 제공합니다."
+      },
+      {
+        "title": "데이터 분석",
+        "description": "소비 맞춤 카드 추천, 대출 비교 서비스, 건강검진 보장 분석은 가장 강력한 재무적 이익을 고객에게 돌려주기 위해 정교한 데이터 기술이 필요합니다."
+      }
+    ]
+  },
+  "features": {
+    "sectionTitle": "우리는 금융과 데이터가 고객의 편이 되는 기술에 집중하고 있습니다.",
+    "sectionSubtitle": "",
+    "items": [
+      {
+        "icon": "target",
+        "title": "실시간 데이터",
+        "description": "우리는 실시간 데이터 네트워크를 활용하여 디지털 경험을 고객 입장에서 재설계합니다.",
+        "image": ""
+      },
+      {
+        "icon": "shield",
+        "title": "고객 중심 개발",
+        "description": "데이터를 통합하고 관리하며 보호할수 있는 기반 플랫폼을 구축하고 고객이 자신의 데이터를 잘 활용하도록 돕는 인간 중심 상호작용과 고객의 이익이 가장 보증되는 제품 개발 프로세스 안에서 하나의 팀으로 일하고 있습니다.",
+        "image": ""
+      },
+      {
+        "icon": "users",
+        "title": "성장하는 조직",
+        "description": "FinBridge는 고객을 위해 진정성 있게 제품을 개발하는 곳, 사람들의 데이터로 옳은 일을 하려는 구성원들이 모여있는 곳, 고객에게 좋은 아이디어를 내고 이를 실행하는 역량을 기준으로 리더가 되는 곳입니다.",
+        "image": ""
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "우리는 미션 드리븐 조직입니다.",
+    "items": [
+      {
+        "name": "미션",
+        "role": "Mission",
+        "company": "FinBridge",
+        "quote": "우리는 고객 가치 실현에서 모든 문제에 근원적인 의문을 제기하고 좋은 데이터와 올바른 기술로 고객의 부를 증진한다는 사명을 기반으로 일합니다."
+      },
+      {
+        "name": "비전",
+        "role": "Vision",
+        "company": "FinBridge",
+        "quote": "데이터를 활용하여 고객이 언제나 최적 시점에 최대 혜택을 누릴 수 있도록 금융의 디지털 경험을 근본적으로 혁신하는 것이 우리의 일입니다."
+      },
+      {
+        "name": "가치",
+        "role": "Values",
+        "company": "FinBridge",
+        "quote": "이것을 다짐 시작에 불과합니다. 우리의 미션에 진심으로 공감하고, 좋은 팀과 함께 성장하고 싶다면 FinBridge와 함께하세요."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "함께 성장할 동료를 찾습니다",
+    "description": "FinBridge에서 가장 도전적인 문제를 가장 뛰어난 동료들과 함께 풀어보세요.",
+    "buttonLabel": "채용 공고 보기",
+    "buttonHref": "#careers"
+  },
+  "footer": {
+    "companyName": "FinBridge",
+    "description": "서울특별시 강남구 역삼로 234, 핀브릿지타워",
+    "links": [
+      {
+        "title": "채용문의",
+        "items": [
+          { "label": "recruit@finbridge.kr", "href": "mailto:recruit@finbridge.kr" }
+        ]
+      },
+      {
+        "title": "기타문의",
+        "items": [
+          { "label": "사업제휴", "href": "#" },
+          { "label": "IR", "href": "#" },
+          { "label": "PR", "href": "#" }
+        ]
+      },
+      {
+        "title": "FinBridge",
+        "items": [
+          { "label": "FinBridge 서비스", "href": "#" },
+          { "label": "FinBridge 블로그", "href": "#" }
+        ]
+      }
+    ],
+    "contact": {
+      "email": "contact@finbridge.kr",
+      "phone": "02-555-1234",
+      "address": "서울특별시 강남구 역삼로 234, 핀브릿지타워"
+    },
+    "copyright": "Copyright © (주) FinBridge. All rights reserved. | 사업자등록번호 000-00-00000 | 대표 홍길동"
+  }
+}

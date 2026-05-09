@@ -38,6 +38,7 @@ export interface Feature {
   icon: string;
   title: string;
   description: string;
+  image?: string;
 }
 
 export interface FeaturesContent {
@@ -50,13 +51,14 @@ export interface AboutContent {
   sectionTitle: string;
   description: string;
   image?: string;
-  stats?: { label: string; value: string }[];
+  stats?: { label: string; value: string; image?: string }[];
 }
 
 export interface Service {
   title: string;
   description: string;
   icon?: string;
+  image?: string;
 }
 
 export interface ServicesContent {

@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Gravity - 무게가 다른 기술",
+    "description": "Gravity는 데스크탑, 모니터, 노트북을 통해 크리에이터와 전문가의 워크플로우를 재정의합니다."
+  },
+  "header": {
+    "logo": "Gravity",
+    "nav": [
+      { "label": "Desktop", "href": "#features" },
+      { "label": "Monitor", "href": "#services" },
+      { "label": "Laptop", "href": "#about" },
+      { "label": "액세서리", "href": "#" },
+      { "label": "고객지원", "href": "#testimonials" }
+    ]
+  },
+  "hero": {
+    "headline": "Gravity Pro",
+    "subheadline": "프로의 작업 환경을 완전히 새롭게. Gravity Pro 시리즈 출시.",
+    "primaryCta": { "label": "더 알아보기", "href": "#features" },
+    "secondaryCta": { "label": "구입하기", "href": "#cta" }
+  },
+  "features": {
+    "sectionTitle": "라인업 살펴보기",
+    "sectionSubtitle": "데스크탑부터 노트북까지, 모든 워크스테이션을 새로 설계했습니다.",
+    "items": [
+      {
+        "icon": "monitor",
+        "title": "Gravity Pro Desktop",
+        "description": "G1 Ultra 칩 탑재. 가장 강력한 크리에이티브 워크스테이션.",
+        "image": "/images/defaults/product-desktop.svg"
+      },
+      {
+        "icon": "monitor",
+        "title": "Gravity Studio Display",
+        "description": "32인치 6K Retina. 10억 색상으로 완벽한 색 정확도.",
+        "image": "/images/defaults/product-monitor.svg"
+      },
+      {
+        "icon": "cpu",
+        "title": "Gravity Book Pro",
+        "description": "역대 가장 얇은 프로 노트북. 최대 28시간 배터리.",
+        "image": "/images/defaults/product-laptop.svg"
+      },
+      {
+        "icon": "zap",
+        "title": "Gravity Book Air",
+        "description": "놀라운 성능, 놀라운 가벼움. 어디서든 자유롭게.",
+        "image": "/images/defaults/product-laptop-air.svg"
+      },
+      {
+        "icon": "layers",
+        "title": "Gravity Mini",
+        "description": "손바닥 위의 워크스테이션. 작지만 강력한 데스크탑.",
+        "image": "/images/defaults/product-mini.svg"
+      },
+      {
+        "icon": "globe",
+        "title": "Gravity Hub",
+        "description": "모든 Gravity 기기를 하나로. 무선 생태계의 중심.",
+        "image": "/images/defaults/product-hub.svg"
+      }
+    ]
+  },
+  "about": {
+    "sectionTitle": "Gravity에서 구입하면 좋은 이유",
+    "description": "2016년 설립 이후, Gravity는 전 세계 크리에이터와 전문가에게 최고의 컴퓨팅 경험을 전달해 왔습니다.\n업계를 선도하는 자체 설계 칩과 디스플레이 기술로 새로운 기준을 만듭니다.",
+    "stats": [
+      { "label": "보상 판매", "value": "기존 장비 반납 시 할인" },
+      { "label": "무이자 할부", "value": "최대 24개월 무이자" },
+      { "label": "무료 배송", "value": "온라인 주문 전 제품" },
+      { "label": "전문가 상담", "value": "1:1 온라인 세션 제공" }
+    ]
+  },
+  "services": {
+    "sectionTitle": "알면 알수록, Gravity",
+    "sectionSubtitle": "기술의 본질에 집중합니다",
+    "items": [
+      {
+        "title": "G1 Ultra 칩",
+        "description": "자체 설계 ARM 아키텍처. CPU, GPU, Neural Engine 통합.",
+        "image": "/images/defaults/service-placeholder.svg"
+      },
+      {
+        "title": "6K Retina 디스플레이",
+        "description": "P3 광색역, True Tone, ProMotion 120Hz.",
+        "image": "/images/defaults/service-placeholder.svg"
+      },
+      {
+        "title": "최대 28시간 배터리",
+        "description": "에너지 효율의 새로운 기준. 하루 종일, 콘센트 없이.",
+        "image": "/images/defaults/service-placeholder.svg"
+      },
+      {
+        "title": "Gravity OS",
+        "description": "하드웨어와 소프트웨어의 완벽한 통합. 빠르고 안정적.",
+        "image": "/images/defaults/service-placeholder.svg"
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "사용자 후기",
+    "items": [
+      {
+        "name": "이현진",
+        "role": "영상 편집 디렉터",
+        "company": "Studio Maru",
+        "quote": "Gravity Pro Desktop으로 작업 환경이 완전히 바뀌었습니다. 8K RAW 편집이 실시간으로 가능해졌어요. 렌더링 시간이 3분의 1로 줄었습니다."
+      },
+      {
+        "name": "김도윤",
+        "role": "3D 아티스트",
+        "company": "Neon Works",
+        "quote": "Studio Display의 색 정확도는 정말 놀랍습니다. 별도 캘리브레이션 없이 바로 작업에 들어갈 수 있어서 워크플로우가 훨씬 빨라졌어요."
+      },
+      {
+        "name": "박서연",
+        "role": "소프트웨어 엔지니어",
+        "company": "토스",
+        "quote": "Gravity Book Pro의 배터리가 정말 오래 갑니다. 카페에서 하루 종일 코딩해도 충전기를 꺼낼 일이 없어요. 팬 소음도 거의 없습니다."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "나에게 맞는 Gravity 찾기",
+    "description": "온라인 스토어에서 지금 주문하세요. 학생 및 교육 관계자 특별 할인, 무료 배송, 무료 각인 서비스를 제공합니다.",
+    "buttonLabel": "Gravity 쇼핑하기",
+    "buttonHref": "#store"
+  },
+  "footer": {
+    "companyName": "Gravity",
+    "description": "무게가 다른 기술",
+    "links": [
+      {
+        "title": "쇼핑 및 알아보기",
+        "items": [
+          { "label": "Gravity Pro Desktop", "href": "#" },
+          { "label": "Studio Display", "href": "#" },
+          { "label": "Gravity Book Pro", "href": "#" },
+          { "label": "Gravity Book Air", "href": "#" },
+          { "label": "Gravity Mini", "href": "#" },
+          { "label": "액세서리", "href": "#" }
+        ]
+      },
+      {
+        "title": "서비스",
+        "items": [
+          { "label": "Gravity Care+", "href": "#" },
+          { "label": "Gravity Cloud", "href": "#" },
+          { "label": "Gravity OS", "href": "#" },
+          { "label": "Gravity for Business", "href": "#" }
+        ]
+      },
+      {
+        "title": "Gravity Store",
+        "items": [
+          { "label": "매장 찾기", "href": "#" },
+          { "label": "온라인 스토어", "href": "#" },
+          { "label": "교육 할인", "href": "#" },
+          { "label": "리퍼비시 제품", "href": "#" }
+        ]
+      },
+      {
+        "title": "회사",
+        "items": [
+          { "label": "회사소개", "href": "#about" },
+          { "label": "채용", "href": "#" },
+          { "label": "뉴스룸", "href": "#" },
+          { "label": "투자자 관계", "href": "#" }
+        ]
+      }
+    ],
+    "contact": {
+      "email": "support@gravity.kr",
+      "phone": "080-500-4000",
+      "address": "서울특별시 성동구 왕십리로 115, Gravity 타워"
+    },
+    "copyright": "Copyright © 2024 Gravity Inc. 모든 권리 보유."
+  }
+}

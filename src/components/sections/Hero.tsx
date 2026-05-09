@@ -6,10 +6,10 @@ export default function Hero({ headline, subheadline, primaryCta, secondaryCta }
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-24 sm:py-32">
       <Container className="text-center">
-        <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+        <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl" data-field="hero.headline">
           {headline}
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600" data-field="hero.subheadline">
           {subheadline}
         </p>
         <div className="mt-10 flex items-center justify-center gap-4">

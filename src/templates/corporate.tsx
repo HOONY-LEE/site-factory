@@ -15,16 +15,16 @@ interface CorporateTemplateProps {
 export default function CorporateTemplate({ content }: CorporateTemplateProps) {
   return (
     <div className="min-h-screen bg-white">
-      <Header {...content.header} />
+      <div data-section="header"><Header {...content.header} /></div>
       <main>
-        <Hero {...content.hero} />
-        <Features {...content.features} />
-        <About {...content.about} />
-        <Services {...content.services} />
-        <Testimonials {...content.testimonials} />
-        <Cta {...content.cta} />
+        <div data-section="hero"><Hero {...content.hero} /></div>
+        <div data-section="features"><Features {...content.features} /></div>
+        <div data-section="about"><About {...content.about} /></div>
+        <div data-section="services"><Services {...content.services} /></div>
+        <div data-section="testimonials"><Testimonials {...content.testimonials} /></div>
+        <div data-section="cta"><Cta {...content.cta} /></div>
       </main>
-      <Footer {...content.footer} />
+      <div data-section="footer"><Footer {...content.footer} /></div>
     </div>
   );
 }

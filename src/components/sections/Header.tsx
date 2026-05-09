@@ -11,14 +11,14 @@ export default function Header({ logo, nav }: HeaderContent) {
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur-md">
       <Container>
         <div className="flex h-16 items-center justify-between">
-          <a href="/" className="text-xl font-bold text-gray-900">
+          <a href="/" className="text-xl font-bold text-gray-900" data-field="header.logo">
             {logo}
           </a>
 
           <nav className="hidden gap-8 md:flex">
-            {nav.map((link) => (
+            {nav.map((link, i) => (
               <a
-                key={link.href}
+                key={i}
                 href={link.href}
                 className="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
               >
@@ -44,9 +44,9 @@ export default function Header({ logo, nav }: HeaderContent) {
 
         {mobileOpen && (
           <nav className="border-t border-gray-100 py-4 md:hidden">
-            {nav.map((link) => (
+            {nav.map((link, i) => (
               <a
-                key={link.href}
+                key={i}
                 href={link.href}
                 className="block py-2 text-sm font-medium text-gray-600"
                 onClick={() => setMobileOpen(false)}

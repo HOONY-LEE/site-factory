@@ -5,14 +5,14 @@ export default function Testimonials({ sectionTitle, items }: TestimonialsConten
   return (
     <section id="testimonials" className="bg-gray-50 py-24 sm:py-32">
       <Container>
-        <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" data-field="testimonials.sectionTitle">
           {sectionTitle}
         </h2>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((testimonial) => (
+          {items.map((testimonial, i) => (
             <div
-              key={testimonial.name}
+              key={i}
               className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100"
             >
               <p className="text-gray-600 italic">&ldquo;{testimonial.quote}&rdquo;</p>
