@@ -200,8 +200,9 @@ export default function EditorPage() {
       }
     }
     setContent(structuredClone(template.defaultContent));
-    setSiteName("");
-  }, [template, siteId]);
+    const nameParam = searchParams.get("name");
+    setSiteName(nameParam || "");
+  }, [template, siteId, searchParams]);
 
   /* ── 에디터→프리뷰: 콘텐츠 전송 ── */
   const sendToPreview = useCallback(() => {

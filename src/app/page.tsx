@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { templates, categories } from "@/lib/templates";
 import { getSites, deleteSite, saveSite, type SavedSite } from "@/lib/sites";
@@ -20,6 +21,7 @@ import {
   Globe,
   Loader2,
   Download,
+  X,
 } from "lucide-react";
 
 /* ── 템플릿 썸네일 목업 ── */
@@ -108,6 +110,7 @@ function StatusBadge({ status }: { status: string }) {
 }
 
 export default function Dashboard() {
+  const router = useRouter();
   const [sites, setSites] = useState<SavedSite[]>([]);
   const [mounted, setMounted] = useState(false);
   const [activeCategory, setActiveCategory] = useState("all");
@@ -116,6 +119,35 @@ export default function Dashboard() {
   const [projectView, setProjectView] = useState<"grid" | "list">("grid");
   const [deployStatus, setDeployStatus] = useState<Record<string, { deployedAt: string; customDomain?: string }>>({});
   const [deployingId, setDeployingId] = useState<string | null>(null);
+
+  /* ── 프로젝트 이름 모달 ── */
+  const [showNameModal, setShowNameModal] = useState(false);
+  const [pendingTemplateId, setPendingTemplateId] = useState<string | null>(null);
+  const [newProjectName, setNewProjectName] = useState("");
+  const nameInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (showNameModal) {
+      setTimeout(() => nameInputRef.current?.focus(), 100);
+    }
+  }, [showNameModal]);
+
+  function openNameModal(templateId: string) {
+    setPendingTemplateId(templateId);
+    setNewProjectName("");
+    setShowNameModal(true);
+  }
+
+  function handleNameConfirm() {
+    if (!pendingTemplateId) return;
+    const name = newProjectName.trim();
+    if (!name) {
+      nameInputRef.current?.focus();
+      return;
+    }
+    router.push(`/editor/${pendingTemplateId}?name=${encodeURIComponent(name)}`);
+    setShowNameModal(false);
+  }
 
   // Fetch deploy status from server
   useEffect(() => {
@@ -262,14 +294,6 @@ export default function Dashboard() {
             </nav>
           </div>
 
-          {/* 우측 액션 */}
-          <button
-            onClick={() => setActiveTab("templates")}
-            className="hidden items-center gap-1.5 rounded-lg bg-gray-900 px-3.5 py-1.5 text-[13px] font-semibold text-white transition-colors hover:bg-gray-800 sm:flex"
-          >
-            <Plus size={14} />
-            새 프로젝트
-          </button>
         </div>
       </header>
 
@@ -322,18 +346,24 @@ export default function Dashboard() {
                         <Monitor size={14} />
                         미리보기
                       </Link>
-                      <Link
-                        href={`/editor/${t.id}`}
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          openNameModal(t.id);
+                        }}
                         className="flex items-center gap-1.5 rounded-lg bg-gray-900 px-4 py-2 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105"
                       >
                         시작하기
                         <ChevronRight size={14} />
-                      </Link>
+                      </button>
                     </div>
                   </div>
 
                   {/* 정보 */}
-                  <Link href={`/editor/${t.id}`}>
+                  <div
+                    onClick={() => openNameModal(t.id)}
+                    className="cursor-pointer"
+                  >
                     <div className="flex items-center gap-2">
                       <h3 className="text-[15px] font-semibold text-gray-900">{t.name}</h3>
                       <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[11px] font-medium text-gray-500">
@@ -341,7 +371,7 @@ export default function Dashboard() {
                       </span>
                     </div>
                     <p className="mt-1 text-[13px] text-gray-400 line-clamp-1">{t.description}</p>
-                  </Link>
+                  </div>
                 </div>
               ))}
 
@@ -625,6 +655,62 @@ export default function Dashboard() {
           </>
         )}
       </main>
+
+      {/* ── 프로젝트 이름 입력 모달 ── */}
+      {showNameModal && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm">
+          <div
+            className="relative w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setShowNameModal(false)}
+              className="absolute right-4 top-4 rounded-md p-1 text-gray-400 transition-colors hover:text-gray-600"
+            >
+              <X size={16} />
+            </button>
+            <div className="mb-1 flex h-10 w-10 items-center justify-center rounded-xl bg-gray-900">
+              <Layers size={18} className="text-white" />
+            </div>
+            <h3 className="mt-3 text-lg font-bold text-gray-900">
+              새 프로젝트
+            </h3>
+            <p className="mt-1 text-sm text-gray-400">
+              프로젝트 이름을 입력하고 시작하세요
+            </p>
+            <div className="mt-5">
+              <input
+                ref={nameInputRef}
+                type="text"
+                value={newProjectName}
+                onChange={(e) => setNewProjectName(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") handleNameConfirm();
+                  if (e.key === "Escape") setShowNameModal(false);
+                }}
+                placeholder="예: 우리회사 홈페이지"
+                className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-900 outline-none transition-colors placeholder:text-gray-300 focus:border-gray-400 focus:bg-white focus:ring-2 focus:ring-gray-200"
+              />
+            </div>
+            <div className="mt-5 flex items-center gap-2">
+              <button
+                onClick={() => setShowNameModal(false)}
+                className="flex-1 rounded-xl border border-gray-200 px-4 py-2.5 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50"
+              >
+                취소
+              </button>
+              <button
+                onClick={handleNameConfirm}
+                disabled={!newProjectName.trim()}
+                className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                시작하기
+                <ChevronRight size={14} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 모바일 하단 네비 */}
       <div className="fixed bottom-0 left-0 right-0 flex border-t border-gray-200 bg-white/90 backdrop-blur-md md:hidden">
